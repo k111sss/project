@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+.header {
+    font-family: 'Nunito', sans-serif;
+}
+.header__inner {
+    display: flex;
+    max-width: 1270px;
+    padding: 12px 0 ;
+    align-items: center;
+    gap: 120px;
+    margin: 0 auto;
+}
+.header-logo {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.header-nav {
+    min-width: 422px;
+}
+.header-nav-list {
+    display: flex;
+    gap: 50px;
+}
+.header-nav-list__item {
+
+}
+.header-nav-list__item a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--main-text-color);
+}
+.decoration-link p {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--main-text-color);
+    border-bottom: 1px solid var(--second-text-color);;
+}
+.decoration-link p::after {
+    content: "";
+    background: url(../assets/icons/Chevron_Down_S.svg);
+    z-index: -1;
+    width: 27px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.header-login {
+    background: var(--button-bg);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 16px;
+    width: 90px;
+    height: 41px;
+    border-radius: 16px;
+    margin-left: auto;
+    transition: all 0.1s ease-out;
+}
+.header-login:active {
+    background: var(--active-buttno-bg);
+    border: 1px solid var(--button-bg);
+}
+.header-login p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+
+
+
+
+
+
+
+
+
+.active-link {
+    cursor: pointer;
+}
+
+.header-nav-list__item {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: var(--button-bg);
+    border-radius: 15px;
+    padding: 15px 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10000;
+    top: 35px;
+    left: 0px;
+}
+  
+.dropdown-content a {
+    margin: 10px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--main-text-color);
+    display: block;
+}
+.dropdown-content a:nth-child(6) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--main-text-color);
+}
+
+.show {
+    position: absolute;
+    display: block;
+    z-index: 10000;
+}
+
+.all-list {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+}

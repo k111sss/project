@@ -1,0 +1,129 @@
+.personal-data__wrapper {
+    display: flex;
+    width: 1010px;
+    height: 573px;
+    background: #D4E2DA;
+    border-radius: 16px;
+    padding: 20px;
+    gap: 40px;
+}
+.personal-data-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 1000px;
+}
+.name-of-person {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #181A33;
+}
+.role-of-person {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #515267;
+}
+.logout {
+    margin-left: auto;
+}
+.logout a {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #181A33;    
+}
+.left-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    width: 245px;
+    height: 208px;
+}
+.left-nav-item a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #52546D; 
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.active-item a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #181A33;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+
+.name-personal-data {
+    display: flex;
+    flex-direction: column;
+}
+.name-personal-data label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #52546D;
+    margin-top: 20px;
+}
+.name-personal-data input {
+    width: 250px;
+    height: 25px;
+    background: #F1F1F1;
+    border: 1px solid #A0D2B4;
+    border-radius: 5px;
+}
+.name-personal-data input:nth-child(6) {
+    padding: 0px 5px;
+    gap: 10px;
+    width: 250px;
+    height: 150px;
+    background: #F1F1F1;
+    border: 1px solid #A0D2B4;
+    border-radius: 5px;
+    align-items: start;
+}
+.account-personal-data label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #52546D;
+    margin-top: 20px;
+}
+.input__wrapper input {
+    padding: 6px;
+    gap: 10px;
+    width: 49px;
+    height: 31px;
+    background: #F1F1F1;
+    border: 1px solid #A0D2B4;
+    border-radius: 5px;
+}
+.input__wrapper input:nth-child(3) {
+    padding: 5px 17px;
+    gap: 10px;
+    width: 80px;
+    height: 31px;
+    background: #F1F1F1;
+    border: 1px solid #A0D2B4;
+    border-radius: 5px;
+}

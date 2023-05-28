@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>BCP</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="header-logo">
+                <img src="../assets/images/logo.svg" alt="">
+            </div>
+            <div class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-list__item">
+                        <a href="../html/main.html">главная</a>
+                    </li>
+                    <li class="header-nav-list__item">
+                        <a href="#">о нас</a>
+                    </li>
+                    <li class="header-nav-list__item decoration-link">
+                        <p class="active-link" onclick="myFunction()">аренда площадки</p>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a class="list" href="#">киностудии</a>
+                              <a class="list" href="#">галереи</a>
+                              <a class="list" href="#">книжные магазины</a>
+                              <a class="list" href="#">кинотеатры</a>
+                              <a class="list" href="#">студии звукозаписи</a>
+                              <a class="all-list" href="../html/catalog.html">весь список</a>
+                            </div>
+
+                          <script>
+                            function myFunction() {
+                              document.getElementById("myDropdown").classList.toggle("show");
+                            }
+    
+                            window.onclick = function(event) {
+                              if (!event.target.matches('.active-link')) {
+                                var dropdowns = document.getElementsByClassName("dropdown-content");
+                                var i;
+                                for (i = 0; i < dropdowns.length; i++) {
+                                  var openDropdown = dropdowns[i];
+                                  if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                  }
+                                }
+                              }
+                            }
+                            </script>
+
+                    </li>
+                </ul>
+            </div>
+            <a class="header-login" href="../html/login.html">
+                <p>Войти</p>
+            </a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__inner">
+            <section class="register">
+                <div class="main-nav">
+                    <a href="../html/main.html"><img src="../assets/icons/Group 3.svg" alt=""><p>вернуться на главную</p></a>
+                </div>
+                <div class="login-canvas">
+                    <h3 class="login-title">
+                        Регистрация
+                    </h3>
+                    <div class="type-selection">
+                        <button class="type-selection-btn type-selection-btn-active"><p>Снимаю</p></button>
+                        <button class="type-selection-btn"><p>Сдаю</p></button>
+                    </div>
+                    <form class="login-poles">
+                            <label for="name">Имя</label>
+                            <input class="pole-settings" type="text" id="name">
+
+                            <label for="surname">Фамилия</label>
+                            <input class="pole-settings" type="text" id="surname">
+
+                            <label for="email">Почта</label>
+                            <input class="pole-settings" type="email" id="email">
+
+                            <label for="phone">Номер телефона</label>
+                            <input class="pole-settings" type="tel" placeholder="+7 (___) ___-__-__" id="phone">
+
+                            <label for="pass">Пароль</label>
+                            <input class="pole-settings" type="password" id="pass">
+                            
+                            <label for="pass-repeat">Повторите пароль</label>
+                            <input class="pole-settings" type="password" id="pass-repeat">
+                    </from>
+                    <button class="login-btn">
+                        <p>Зарегистрироваться</p>
+                    </button>
+                    <a class="link-to-register" href="../html/login.html">Есть аккаунт? <span>Войти</span></a>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
