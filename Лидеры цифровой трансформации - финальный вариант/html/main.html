@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <title>BCP</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="header-logo">
+                <img src="../assets/images/logo.svg" alt="">
+            </div>
+            <div class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-list__item">
+                        <a href="../html/main.html">главная</a>
+                    </li>
+                    <li class="header-nav-list__item">
+                        <a href="#">о нас</a>
+                    </li>
+                    <li class="header-nav-list__item decoration-link">
+                        <p class="active-link" onclick="myFunction()">аренда площадки</p>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a class="list" href="#">киностудии</a>
+                              <a class="list" href="#">галереи</a>
+                              <a class="list" href="#">книжные магазины</a>
+                              <a class="list" href="#">кинотеатры</a>
+                              <a class="list" href="#">студии звукозаписи</a>
+                              <a class="all-list" href="../html/catalog.html">весь список</a>
+                            </div>
+
+                          <script>
+                            function myFunction() {
+                              document.getElementById("myDropdown").classList.toggle("show");
+                            }
+    
+                            window.onclick = function(event) {
+                              if (!event.target.matches('.active-link')) {
+                                var dropdowns = document.getElementsByClassName("dropdown-content");
+                                var i;
+                                for (i = 0; i < dropdowns.length; i++) {
+                                  var openDropdown = dropdowns[i];
+                                  if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                  }
+                                }
+                              }
+                            }
+                            </script>
+
+                    </li>
+                </ul>
+            </div>
+            <a class="header-login" href="../html/login.html">
+                <p>Войти</p>
+            </a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__inner">
+            <section class="main">
+                <h3 class="main-title">
+                  Поможем Вам <br>
+                  выбрать помещение <br>
+                  под любую задачу
+                </h3>
+                <a class="to-catalog" href="../html/catalog.html">
+                  В каталог <img src="../assets/icons/Arrow_Square_Right.svg" alt="">
+                </a>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,100 @@
+.personal-data__wrapper {
+    display: flex;
+    width: 1010px;
+    height: 248px;
+    background: #D4E2DA;
+    border-radius: 16px;
+    padding: 20px;
+    gap: 40px;
+}
+.personal-data-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 1000px;
+}
+.name-of-person {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #181A33;
+}
+.role-of-person {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #515267;
+}
+.logout {
+    margin-left: auto;
+}
+.logout a {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #181A33;    
+}
+.left-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    width: 245px;
+    height: 208px;
+}
+.left-nav-item a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #52546D; 
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.active-item a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #181A33;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.my-card__header {
+    display: flex;
+    gap: 100px;
+}
+.my-card__header p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #52546D;
+}
+.my-card__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px 16px;
+    gap: 40px;
+    height: 91px;
+    background: #A0D2B4;
+    border-radius: 16px;
+}
+.my-card__wrapper p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #181A33;
+}

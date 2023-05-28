@@ -1,0 +1,170 @@
+    body {
+        background: #E1EAE5;
+    }
+    .card {
+        display: flex;
+        gap: 130px;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1270px;
+        margin: 50px auto;
+    }
+    .card-left {
+        width: 390px;
+    }
+    .card-info {
+        margin-bottom: 30px;
+    }
+    .card-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 68px;
+        color: #181A33;
+    }
+    .card-area-type {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 30px;
+        color: #343548;
+        margin-bottom: 40px;
+    }
+    .card-desc {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 41px;
+        color: #181A33;
+        margin-bottom: 50px;
+    }
+    .card-info-about-area-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        color: #343548;
+        margin-bottom: 5px;
+    }
+    .card-info-about-area-canvas {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 16px;
+        gap: 10px;
+        width: 371px;
+        height: 81px;
+        background: #ECF7F0;
+        border-radius: 16px;
+    }
+    .card-info-about-area-canvas p {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: #343548;
+    }
+    .param-area::before {
+        content: url(../assets/icons/shape-2-fill.svg);
+    }
+    .param-price::before {
+        content: url(../assets/icons/price-tag-3-line.svg);
+    }
+    .param-people::before {
+        content: url(../assets/icons/Users.svg);
+    }
+    .card-info-about-area-additional-equipment-link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 10px;
+        border-bottom: 1px dashed #000000;
+    }
+    .card-reserve {
+        margin-top: 30px;
+    }
+    .card-reserve a {
+        background: #343548;
+        border-radius: 15px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        color: #FFFFFF;
+        padding: 12px 50px;
+    }
+    .reserve-popup{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 30px;
+        gap: 20px;
+        position: absolute;
+        width: 378px;
+        height: 658px;
+        left: 1347px;
+        top: 252px;
+        background: #FDFFF5;
+        box-shadow: 0px 0px 250px #000000;
+        border-radius: 10px;
+        z-index: 100;
+    }
+    .popup-canvas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .popup-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 41px;
+        color: #181A33;
+    }
+    .popup-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .popup-form label {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        color: #52546D;
+    }
+    .popup-form input {
+        padding: 10px 5px;
+        background: #ECF7F0;
+        border-radius: 5px;
+
+        margin-bottom: 20px;
+    }
+    .popup-confirm {
+        background: #343548;
+        border-radius: 15px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        padding: 5px 12px;
+        cursor: pointer;
+    }
+
+
+
+    .card-center {
+        display: flex;
+        gap: 30px;
+    }
+    .image-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }

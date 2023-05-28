@@ -1,0 +1,33 @@
+body {
+    background: #FDFFF5;
+    background-image: url(../assets/images/bg.png);
+    background-repeat: no-repeat;
+}
+.main {
+    margin: 6% auto;
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    justify-content: center;
+}
+.main-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 95px;
+    color: var(--main-text-color);
+}
+.to-catalog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 70px;
+    background: #A0D2B4;
+    border-radius: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 48px;
+    color: #000000;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/catalog.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>BCP</title>
+</head>
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <header class="header">
+        <div class="header__inner">
+            <div class="header-logo">
+                <img src="../assets/images/logo.svg" alt="">
+            </div>
+            <div class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-list__item">
+                        <a href="../html/main.html">главная</a>
+                    </li>
+                    <li class="header-nav-list__item">
+                        <a href="#">о нас</a>
+                    </li>
+                    <li class="header-nav-list__item decoration-link">
+                        <p class="active-link" onclick="myFunction()">аренда площадки</p>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a class="list" href="#">киностудии</a>
+                              <a class="list" href="#">галереи</a>
+                              <a class="list" href="#">книжные магазины</a>
+                              <a class="list" href="#">кинотеатры</a>
+                              <a class="list" href="#">студии звукозаписи</a>
+                              <a class="all-list" href="../html/catalog.html">весь список</a>
+                            </div>
+
+                          <script>
+                            function myFunction() {
+                              document.getElementById("myDropdown").classList.toggle("show");
+                            }
+    
+                            window.onclick = function(event) {
+                              if (!event.target.matches('.active-link')) {
+                                var dropdowns = document.getElementsByClassName("dropdown-content");
+                                var i;
+                                for (i = 0; i < dropdowns.length; i++) {
+                                  var openDropdown = dropdowns[i];
+                                  if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                  }
+                                }
+                              }
+                            }
+                            </script>
+
+                    </li>
+                </ul>
+            </div>
+            <a class="header-login" href="../html/login.html">
+                <p>Войти</p>
+            </a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__inner">
+            <section class="catalog">
+                <nav class="catalog-nav">
+                    <div class="filter">
+                        <a href="javascript:PopUpShow()">Фильтры</a>
+                    </div>
+                    <div class="filter-popup" id="popup2">
+                        <div class="filter-popup-content">
+                           <a href="javascript:PopUpHide()"><img src="../assets/icons/Close_L.svg" alt=""></a>
+                           <div class="filter-popup-canvas">
+                                    <label for="">Тип площадки</label>
+                                    <input type="text">
+
+                                    <label for="">Цена</label>
+                                    <input type="number" placeholder="от">
+                                    <input type="number" placeholder="до">
+
+                                    <label for="persons">Количество персон</label>
+                                    <input type="number" placeholder="от" id="persons">
+                                    <input type="number" placeholder="до" id="persons">
+
+                                    <label for="area">Площадь</label>
+                                    <input type="number" placeholder="от" id="area">
+                                    <input type="number" placeholder="до" id="area">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+                    <script>
+                        $(document).ready(function(){
+                            //Скрыть PopUp при загрузке страницы    
+                            PopUpHide();
+                        });
+                                        //Функция отображения PopUp
+                                        function PopUpShow(){
+                                            $("#popup2").show();
+                                        }
+                                        //Функция скрытия PopUp
+                                        function PopUpHide(){
+                                            $("#popup2").hide();
+                                        }
+                    </script>
+                </nav>
+                <div class="catalog-canvas">
+                    <div class="catalog-cards">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="../assets/images/i 6.png" alt="">
+                            </div>
+                            <div class="card-info">
+                                <h3 class="card-title">
+                                    Кинотеатр<br>на "Дубровке"
+                                </h3>
+                                <div class="card-metro">
+                                    <img src="../assets/icons/Map_Pin.svg" alt=""><p>метро <span> Дубровская</span></p>
+                                </div>
+                                <div class="card-params">
+                                    <p class="param-area param">150<span> м2</span></p>
+                                    <p class="param-price param"><span>от </span>3 900<span>₽</span></p>
+                                    <p class="param-people param"><span>до </span>100 <span>персон</span></p>
+                                </div>
+                            </div>
+                            <a class="more-info" href=""><p>Подробнее</p></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
